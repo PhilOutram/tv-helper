@@ -113,9 +113,17 @@ export const GUIDES = [
     colour: "netflix",
     steps: [
       {
+        title: "Turn the TV on",
+        text:
+          "Press the red power button on the SAMSUNG remote and wait for the home " +
+          "screen with the big advert.",
+        note: "TV already on? Just go to the next step.",
+        remotes: [{ r: "S", btns: ["power"] }],
+        screen: "tvHome",
+      },
+      {
         title: "Press NETFLIX",
         text: "On the SAMSUNG remote, press the white NETFLIX button.",
-        note: "If the TV is off it switches itself on. Give it a few seconds.",
         remotes: [{ r: "S", btns: ["netflix"] }],
       },
       {
@@ -167,9 +175,17 @@ export const GUIDES = [
     colour: "prime",
     steps: [
       {
+        title: "Turn the TV on",
+        text:
+          "Press the red power button on the SAMSUNG remote and wait for the home " +
+          "screen with the big advert.",
+        note: "TV already on? Just go to the next step.",
+        remotes: [{ r: "S", btns: ["power"] }],
+        screen: "tvHome",
+      },
+      {
         title: "Press prime video",
         text: "On the SAMSUNG remote, press the white prime video button.",
-        note: "If the TV is off it switches itself on. Give it a few seconds.",
         remotes: [{ r: "S", btns: ["prime"] }],
       },
       {
@@ -224,6 +240,15 @@ export const GUIDES = [
     sub: "For example Les Misérables",
     colour: "rent",
     steps: [
+      {
+        title: "Turn the TV on",
+        text:
+          "Press the red power button on the SAMSUNG remote and wait for the home " +
+          "screen with the big advert.",
+        note: "TV already on? Just go to the next step.",
+        remotes: [{ r: "S", btns: ["power"] }],
+        screen: "tvHome",
+      },
       {
         title: "Press prime video",
         text: "On the SAMSUNG remote, press the white prime video button.",

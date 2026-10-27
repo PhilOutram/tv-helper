@@ -1,8 +1,8 @@
 // TV Helper - step-by-step picture guides for the Samsung TV and Panasonic recorder.
-import { VERSION, CHANGELOG } from "./version.js?v=v0.03";
-import { REMOTES, GUIDES } from "./guides.js?v=v0.03";
-import { SCREENS } from "./screens.js?v=v0.03";
-import { FAMILY_NOTES } from "./notes.js?v=v0.03";
+import { VERSION, CHANGELOG } from "./version.js?v=v0.04";
+import { REMOTES, GUIDES } from "./guides.js?v=v0.04";
+import { SCREENS } from "./screens.js?v=v0.04";
+import { FAMILY_NOTES } from "./notes.js?v=v0.04";
 
 const ZOOM             = 1.9;  // display pixels per pixel of the original remote photo crop
 const ZOOM_HEIGHT      = 300;  // height of the zoomed remote window, px
