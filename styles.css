@@ -551,6 +551,49 @@ a {
   font-weight: 900;
   letter-spacing: 0.05em;
 }
+.nf-pick {
+  justify-content: center;
+  background-image: linear-gradient(90deg, #141414 35%, #4a3a2c);
+}
+.pick-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  width: 45%;
+}
+.pick-col small {
+  font-size: 0.6rem;
+}
+.pick-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pick-me .smiley {
+  display: grid;
+  place-items: center;
+  width: 2.4rem;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  background-color: #2f7bd8;
+}
+.pick-col .kids,
+.pick-col .add {
+  display: grid;
+  place-items: center;
+  width: 1.5rem;
+  aspect-ratio: 1;
+  border-radius: 4px;
+  font-size: 0.55rem;
+  font-weight: 700;
+  background-image: linear-gradient(90deg, #e5a50a, #d7263d, #7b4fd6);
+}
+.pick-col .add {
+  border: 1px solid #888;
+  background-image: none;
+}
 .profiles {
   justify-content: center;
   gap: 1rem;
@@ -560,9 +603,6 @@ a {
   aspect-ratio: 1;
   border-radius: 8px;
 }
-.p1 { background-color: #2f7bd8; }
-.p2 { background-color: #e5a50a; }
-.p3 { background-color: #d7263d; }
 .q1 { background-color: #5ab0e8; border-radius: 50%; }
 .q2 { background-color: #8e5ad8; border-radius: 50%; }
 .q3 { background-color: #2fb37a; border-radius: 50%; }

@@ -1,15 +1,15 @@
 // Network-first service worker: always fetch the latest when online, fall back to the
 // cache when offline. Keep ASSETS in sync with the files the app needs.
-const CACHE = "tv-helper-v2";
+const CACHE = "tv-helper-v3";
 const ASSETS = [
   ".",
   "index.html",
-  "styles.css?v=v0.02",
-  "app.js?v=v0.02",
-  "guides.js?v=v0.02",
-  "screens.js?v=v0.02",
-  "notes.js?v=v0.02",
-  "version.js?v=v0.02",
+  "styles.css?v=v0.03",
+  "app.js?v=v0.03",
+  "guides.js?v=v0.03",
+  "screens.js?v=v0.03",
+  "notes.js?v=v0.03",
+  "version.js?v=v0.03",
   "manifest.webmanifest",
   "icon.svg",
   "icon-192.png",

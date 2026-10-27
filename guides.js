@@ -119,9 +119,12 @@ export const GUIDES = [
         remotes: [{ r: "S", btns: ["netflix"] }],
       },
       {
-        title: "Who's watching?",
-        text: "Use the arrows to move to your picture, then press the middle OK button.",
-        remotes: [{ r: "S", btns: ["left", "right", "ok"] }],
+        title: "Choose a profile",
+        text:
+          "Netflix asks you to choose a profile. John (the blue smiley face) is " +
+          "already picked, so just press the middle OK button.",
+        note: "Picked the wrong one? Use ▲ ▼ to move up and down the list.",
+        remotes: [{ r: "S", btns: ["ok"] }],
         screen: "nfProfiles",
       },
       {

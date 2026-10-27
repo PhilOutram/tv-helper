@@ -1,8 +1,13 @@
-export const VERSION = "v0.02";
+export const VERSION = "v0.03";
 
 // Newest first. Bump VERSION and prepend an entry on EVERY publish, so the live
 // app always shows exactly what shipped. Dates are YYYY-MM-DD.
 export const CHANGELOG = [
+  {
+    version: "v0.03",
+    date: "2026-10-27",
+    notes: ["Netflix guide: the profile screen now matches the real one (John, then OK)."],
+  },
   {
     version: "v0.02",
     date: "2026-10-27",

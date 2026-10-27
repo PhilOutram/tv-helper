@@ -37,11 +37,15 @@ export const SCREENS = {
         <span class="banner-sub">Now: the news</span></div>
     </div>`,
 
+  // Netflix lists the profiles down the left, over a picture from a programme.
   nfProfiles: () => `
-    <div class="scr scr-nf">
-      <div class="scr-title">Who's watching?</div>
-      <div class="row profiles">
-        <div class="prof p1 hot"></div><div class="prof p2"></div><div class="prof p3"></div>
+    <div class="scr scr-nf nf-pick">
+      <div class="pick-col">
+        <div class="nf-logo">NETFLIX</div>
+        <small>Choose a profile</small>
+        <div class="pick-me"><span class="smiley hot">˙‿˙</span><b>John</b></div>
+        <span class="kids">kids</span>
+        <span class="add">+</span>
       </div>
     </div>`,
 
