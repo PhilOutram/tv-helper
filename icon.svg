@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="TV Helper">
+  <rect x="56" y="104" width="400" height="260" rx="36" fill="#1d1b19" />
+  <rect x="84" y="132" width="344" height="204" rx="18" fill="#3b8fd6" />
+  <polygon points="226,190 226,278 302,234" fill="#ffd400" />
+  <rect x="196" y="392" width="120" height="24" rx="12" fill="#1d1b19" />
+</svg>
