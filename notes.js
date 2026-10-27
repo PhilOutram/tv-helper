@@ -50,8 +50,12 @@ to two steps.</p>
   <li><b>Amazon purchase PIN:</b> Prime Video settings &rarr; Parental Controls &rarr;
     purchase restrictions. Stops accidental rentals; the Rent guide tells her to ring you
     if it asks.</li>
-  <li><b>Which HDMI?</b> The News guide says "HDMI (it may also say Panasonic)". If the
-    Source list shows a clearer name, update step 4 of the News guide to match.</li>
+  <li><b>Which HDMI?</b> The recorder is <b>HDMI3</b> in the Source list (between TV and
+    Technicolor, probably the broadband router's media server). To make it plainer, in Source
+    highlight HDMI3, press &#x25BC; and, if offered, choose <b>Edit</b> to rename it, e.g.
+    "Recorder", then
+    update step 4 of the News guide to match. HDMI3 also sits at the end of the app row on the
+    home screen.</li>
   <li><b>Add to her home screen:</b> open this page on her phone or tablet, then Share
     &rarr; Add to Home Screen, so it opens like an app.</li>
 </ul>

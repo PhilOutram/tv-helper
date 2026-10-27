@@ -6,14 +6,27 @@ const tile = (label, cls = "") => `<div class="tile ${cls}">${label}</div>`;
 const poster = (label, cls = "") => `<div class="poster ${cls}"><span>${label}</span></div>`;
 
 export const SCREENS = {
+  // The Samsung home screen: a big advert at the top and a row of apps along the bottom.
+  tvHome: () => `
+    <div class="scr scr-tvhome">
+      <div class="side">👤<br>🔍<br>⌂</div>
+      <div class="ad">Big advert<small>(changes every day)</small></div>
+      <div class="tabs"><span class="on">For You</span><span>Live</span><span>Apps</span></div>
+      <div class="apps">
+        <span>Live TV</span><span class="a-nf">NETFLIX</span><span class="a-pv">prime video</span>
+        <span>iPlayer</span><span>…</span><span class="a-hdmi">HDMI3</span>
+      </div>
+    </div>`,
+
+  // The Source bar along the bottom of the picture. HDMI3 is the Panasonic recorder.
   source: () => `
-    <div class="scr scr-home">
-      <div class="scr-caption">Sources</div>
-      <div class="row">
-        ${tile("📺<br>TV")}
-        ${tile("HDMI<br><small>Panasonic</small>", "hot")}
-        ${tile("HDMI 2")}
-        ${tile("USB")}
+    <div class="scr scr-src">
+      <div class="srcbar">
+        <span>✳<br>SmartThings</span>
+        <span class="on">📺<br>TV</span>
+        <span class="hot">▭<br>HDMI3</span>
+        <span>▭<br>Technicolor…</span>
+        <span>⇄<br>Connection Guide</span>
       </div>
     </div>`,
 

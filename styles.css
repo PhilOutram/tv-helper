@@ -406,9 +406,102 @@ a {
   font-size: 1.1rem;
 }
 
-.scr-home {
+.scr-tvhome {
+  display: grid;
+  grid-template-columns: 1.6rem 1fr;
+  grid-template-rows: 1fr auto auto;
+  gap: 0.3rem;
+  padding: 0.4rem;
+  background-color: #14121f;
+}
+.scr-tvhome .side {
+  grid-row: 1 / 4;
+  text-align: center;
+  font-size: 0.7rem;
+  line-height: 2;
+  opacity: 0.8;
+}
+.scr-tvhome .ad {
+  display: grid;
+  place-content: center;
+  border-radius: 6px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #f4e600;
+  background-color: #6a4ce0;
+}
+.scr-tvhome .ad small {
+  font-weight: 400;
+  font-size: 0.65rem;
+  color: #fff;
+}
+.scr-tvhome .tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 0.7rem;
+}
+.scr-tvhome .tabs .on {
+  padding: 0 0.4rem;
+  border-radius: 3px;
+  color: #000;
+  background-color: #fff;
+}
+.scr-tvhome .apps {
+  display: flex;
+  gap: 0.25rem;
+}
+.scr-tvhome .apps span {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  min-height: 1.9rem;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 0.55rem;
+  line-height: 1.1;
+  background-color: #2f6fb0;
+}
+.scr-tvhome .apps .a-nf {
+  font-weight: 800;
+  color: #e50914;
+  background-color: #fff;
+}
+.scr-tvhome .apps .a-pv {
+  background-color: #1a98ff;
+}
+.scr-tvhome .apps .a-hdmi {
+  background-color: #1aa3e0;
+}
+
+.scr-src {
   justify-content: flex-end;
-  background-image: linear-gradient(160deg, #2a3b55, #0d1420);
+  padding: 0.4rem;
+  background-image: linear-gradient(160deg, #6d8a7a, #2c3a33);
+}
+.srcbar {
+  display: flex;
+  gap: 0.2rem;
+  padding: 0.4rem 0.2rem;
+  border-radius: 4px;
+  background-color: rgba(20, 22, 30, 0.92);
+}
+.srcbar span {
+  flex: 1;
+  padding: 0.2rem 0.1rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+.srcbar .on {
+  opacity: 0.8;
+}
+.srcbar .hot {
+  font-size: 0.75rem;
+  font-weight: 700;
+  background-color: #1d5fa8;
 }
 .tile {
   flex: 1;

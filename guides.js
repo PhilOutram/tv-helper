@@ -53,9 +53,12 @@ export const GUIDES = [
     steps: [
       {
         title: "Turn the TV on",
-        text: "Press the red power button on the SAMSUNG remote.",
+        text:
+          "Press the red power button on the SAMSUNG remote. The TV's home screen " +
+          "appears, with a big advert at the top. That's normal - just carry on.",
         note: "TV already on? Just go to the next step.",
         remotes: [{ r: "S", btns: ["power"] }],
+        screen: "tvHome",
       },
       {
         title: "Turn the recorder on",
@@ -72,9 +75,10 @@ export const GUIDES = [
       {
         title: "Pick the recorder",
         text:
-          "A row of boxes appears. Use the ◀ ▶ arrows to move to HDMI " +
-          "(it may also say Panasonic), then press the middle OK button.",
-        remotes: [{ r: "S", btns: ["left", "right", "ok"] }],
+          "A row of boxes appears along the bottom. Press ▶ to move to HDMI3 " +
+          "(just right of TV), then press the middle OK button.",
+        note: "HDMI3 is the recorder. Don't pick TV - that's the fuzzy picture.",
+        remotes: [{ r: "S", btns: ["right", "ok"] }],
         screen: "source",
       },
       {

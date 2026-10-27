@@ -1,8 +1,16 @@
-export const VERSION = "v0.01";
+export const VERSION = "v0.02";
 
 // Newest first. Bump VERSION and prepend an entry on EVERY publish, so the live
 // app always shows exactly what shipped. Dates are YYYY-MM-DD.
 export const CHANGELOG = [
+  {
+    version: "v0.02",
+    date: "2026-10-27",
+    notes: [
+      "News guide: the recorder is HDMI3 in the Source list, drawn to match the real TV.",
+      "Turning the TV on now shows its home screen with the advert, so it looks familiar.",
+    ],
+  },
   {
     version: "v0.01",
     date: "2026-10-27",
