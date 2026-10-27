@@ -111,6 +111,7 @@ export const GUIDES = [
     title: "Watch Netflix",
     sub: "Films and series on Netflix",
     colour: "netflix",
+    logo: "netflix",
     steps: [
       {
         title: "Turn the TV on",
@@ -173,6 +174,7 @@ export const GUIDES = [
     title: "Amazon programmes",
     sub: "Series and films included with Prime",
     colour: "prime",
+    logo: "prime",
     steps: [
       {
         title: "Turn the TV on",
@@ -239,6 +241,7 @@ export const GUIDES = [
     title: "Rent a film on Amazon",
     sub: "For example Les Misérables",
     colour: "rent",
+    logo: "prime",
     steps: [
       {
         title: "Turn the TV on",

@@ -1,8 +1,13 @@
-export const VERSION = "v0.04";
+export const VERSION = "v0.05";
 
 // Newest first. Bump VERSION and prepend an entry on EVERY publish, so the live
 // app always shows exactly what shipped. Dates are YYYY-MM-DD.
 export const CHANGELOG = [
+  {
+    version: "v0.05",
+    date: "2026-10-27",
+    notes: ["Netflix and Amazon cards show logos drawn like the buttons on the TV remote."],
+  },
   {
     version: "v0.04",
     date: "2026-10-27",

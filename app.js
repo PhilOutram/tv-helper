@@ -1,14 +1,22 @@
 // TV Helper - step-by-step picture guides for the Samsung TV and Panasonic recorder.
-import { VERSION, CHANGELOG } from "./version.js?v=v0.04";
-import { REMOTES, GUIDES } from "./guides.js?v=v0.04";
-import { SCREENS } from "./screens.js?v=v0.04";
-import { FAMILY_NOTES } from "./notes.js?v=v0.04";
+import { VERSION, CHANGELOG } from "./version.js?v=v0.05";
+import { REMOTES, GUIDES } from "./guides.js?v=v0.05";
+import { SCREENS } from "./screens.js?v=v0.05";
+import { FAMILY_NOTES } from "./notes.js?v=v0.05";
 
 const ZOOM             = 1.9;  // display pixels per pixel of the original remote photo crop
 const ZOOM_HEIGHT      = 300;  // height of the zoomed remote window, px
 const RING_SIZE        = 34;   // highlight ring diameter, in original photo pixels
 const SPEECH_RATE      = 0.9;  // slightly slower than normal speech
 const NEWS_SOURCE_STEP = 3;    // News guide step that starts from Netflix / Amazon
+
+// Card badges drawn like the NETFLIX and prime video buttons on the Samsung remote.
+const PRIME_SMILE = `<svg viewBox="0 0 40 10" aria-hidden="true">
+  <path d="M2 2 Q20 11 36 3" /><path d="M31 1.5 L37 2.5 L35 8" /></svg>`;
+const LOGOS = {
+  netflix: `<span class="logo logo-netflix">NETFLIX</span>`,
+  prime: `<span class="logo logo-prime"><b>prime</b><b>video</b>${PRIME_SMILE}</span>`,
+};
 
 const app = document.getElementById("app");
 const guideById = Object.fromEntries(GUIDES.map((g) => [g.id, g]));
@@ -58,7 +66,7 @@ function renderHome() {
       ${GUIDES.map(
         (g) => `
         <a class="card card-${g.colour}" href="#/g/${g.id}/1">
-          <span class="card-icon" aria-hidden="true">${g.icon}</span>
+          <span class="card-icon" aria-hidden="true">${g.logo ? LOGOS[g.logo] : g.icon}</span>
           <span class="card-text"><b>${g.title}</b><span>${g.sub}</span></span>
           <span class="card-go" aria-hidden="true">›</span>
         </a>
@@ -108,7 +116,9 @@ function renderStep(guide, n) {
         ${(step.remotes || []).map((rm) => renderRemote(rm, option)).join("")}
         ${step.screen ? `<div class="tv-label">The TV screen looks like this:</div>
           <div class="tv">${SCREENS[step.screen](option)}</div>` : ""}
-        ${step.photo ? `<img class="photo" src="${step.photo.src}" alt="${step.photo.alt}" />` : ""}
+        ${step.photo
+          ? `<img class="photo" src="${step.photo.src}" alt="${step.photo.alt}" />`
+          : ""}
         ${step.jump ? `<a class="jump" href="#/g/${step.jump.guide}/${step.jump.step}">
           ${step.jump.label} ›</a>` : ""}
       </article>

@@ -89,6 +89,38 @@ a {
   font-size: 2.6rem;
   line-height: 1;
 }
+.logo {
+  display: grid;
+  place-items: center;
+  width: 5.2rem;
+  height: 3.2rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.logo-netflix {
+  font-family: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.02em;
+  color: #e50914;
+}
+.logo-prime {
+  align-content: center;
+  line-height: 0.95;
+  color: #232f3e;
+}
+.logo-prime b {
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+.logo-prime svg {
+  width: 2.6rem;
+  height: 0.65rem;
+  fill: none;
+  stroke: #00a8e1;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
 .card-text {
   display: grid;
   flex: 1;

@@ -116,7 +116,9 @@ export const SCREENS = {
     <div class="scr scr-pv scr-detail">
       <div class="d-title">Les Misérables</div>
       <div class="badge paid">🛍 Rent or buy</div>
-      <div class="row">${tile("Rent HD £", "btn hot")}${tile("Buy HD £", "btn")}${tile("+", "btn sq")}</div>
+      <div class="row">
+        ${tile("Rent HD £", "btn hot")}${tile("Buy HD £", "btn")}${tile("+", "btn sq")}
+      </div>
     </div>`,
 
   pvConfirm: () => `
